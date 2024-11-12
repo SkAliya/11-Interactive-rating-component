@@ -1,0 +1,111 @@
+@use "../sass/base.scss" as var1;
+
+.card {
+  max-width: 40rem;
+  background-color: var(--card-bg);
+  border-radius: 3rem;
+  padding: 3rem;
+  @media only screen and (max-width: var1.$bp-smaller) {
+    max-width: 38rem;
+    margin: 0 2rem;
+  }
+  @media only screen and (max-width: var1.$bp-verysmall) {
+    max-width: 36rem;
+    border-radius: 2rem;
+  }
+  &__heading {
+    font-size: 3rem;
+    color: var(--color-heading);
+    font-weight: 700;
+  }
+  &__description {
+    font-weight: 400;
+    color: var(--color-txt);
+  }
+}
+
+/* Rating state */
+.rating {
+  transition: all 0.3s;
+  padding: 1rem 0;
+
+  &__circle {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50rem;
+    background-color: hsla(218, 12%, 63%, 0.089);
+    display: grid;
+    place-items: center;
+    @media only screen and (max-width: var1.$bp-verysmall) {
+      height: 4.5rem;
+      width: 4.5rem;
+    }
+    &--star {
+      height: 1.6rem;
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 2rem;
+    input[type="radio"] {
+      position: absolute;
+      margin: -1px;
+      visibility: hidden;
+      padding: 0;
+      border: 0;
+    }
+    &--btn {
+      border: none;
+      width: 100%;
+      padding: 1.4rem 2rem;
+      border-radius: 50rem;
+      background-color: var(--primary-color);
+      color: var(--card-bg);
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--color-heading);
+      }
+      @media only screen and (max-width: var1.$bp-verysmall) {
+        padding: 1.8rem 2rem;
+      }
+    }
+    .number {
+      font-weight: 700;
+      color: var(--color-txt);
+      &:hover {
+        cursor: pointer;
+        background-color: var(--primary-color);
+        color: var(--card-bg);
+      }
+    }
+    .inp:checked ~ .number {
+      background-color: var(--color-heading);
+      color: var(--card-bg);
+    }
+  }
+}
+
+/* Thank you state */
+.thank {
+  text-align: center;
+  padding: 1rem 0;
+  &__img {
+    height: 10rem;
+  }
+  &__rate {
+    display: inline-block;
+    font-weight: 700;
+    background-color: hsla(218, 12%, 63%, 0.089);
+    padding: 0.4rem 1.6rem;
+    border-radius: 50rem;
+    color: hsla(25, 79%, 53%, 0.735);
+  }
+  &__heading {
+    line-height: 1;
+  }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="card">
+          <!-- Rating state -->
+          <div class="rating">
+            <div class="rating__circle mb-large">
+              <img
+                class="rating__circle--star"
+                src="./images/icon-star.svg"
+                alt="orange star"
+              />
+            </div>
+            <h1 class="card__heading mb-medium">How did we do?</h1>
+            <p class="card__description">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+            <form>
+              <div class="rating__form mb-large mt-large">
+                <label for="rating-1">
+                  <input
+                    type="radio"
+                    id="rating-1"
+                    name="rating"
+                    value="1"
+                    class="radio inp"
+                  />
+                  <div class="number rating__circle">1</div>
+                </label>
+                <label for="rating-2">
+                  <input
+                    type="radio"
+                    id="rating-2"
+                    name="rating"
+                    value="2"
+                    class="radio inp"
+                  />
+                  <div class="number rating__circle">2</div>
+                </label>
+                <label for="rating-3">
+                  <input
+                    type="radio"
+                    id="rating-3"
+                    name="rating"
+                    value="3"
+                    class="radio inp"
+                  />
+                  <div class="number rating__circle">3</div>
+                </label>
+                <label for="rating-4">
+                  <input
+                    type="radio"
+                    id="rating-4"
+                    name="rating"
+                    value="4"
+                    class="radio inp"
+                  />
+                  <div class="number rating__circle">4</div>
+                </label>
+                <label for="rating-5">
+                  <input
+                    type="radio"
+                    id="rating-5"
+                    name="rating"
+                    value="5"
+                    class="radio inp"
+                  />
+                  <div class="number rating__circle">5</div>
+                </label>
+              </div>
+              <button type="submit" class="rating__form--btn">Submit</button>
+            </form>
+          </div>
+          <!-- Thank you state -->
+          <div class="thank hide">
+            <img
+              src="./images/illustration-thank-you.svg"
+              alt="thank you illustration"
+              class="thank__img"
+            />
+
+            <div class="thank__rate mt-large mb-large">
+              You selected <span class="thank__rate--number">0</span> out of 5
+            </div>
+            <h1 class="card__heading thank__heading mb-medium">Thank you!</h1>
+            <p class="card__description">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/SkAliya">Aliya Shaik</a>.
+      </div>
+    </footer>
+  </body>
+</html>

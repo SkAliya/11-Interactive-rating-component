@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* CSS VARIABLES */
+:root {
+  /* COLORS */
+  --primary-color: hsl(25, 97%, 53%);
+  --card-bg: hsl(213, 19%, 18%);
+  --body-bg: hsl(216, 12%, 8%);
+  --color-txt: hsl(217, 12%, 63%);
+  --color-heading: hsl(0, 0%, 100%);
+}
+
+/* media-queries */
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-mediumSmall: 50em; //800px
+$bp-small: 43.75em; //700px
+$bp-smaller: 37.5em; //600px
+$bp-verysmall: 25em; //400px
+
+/* UTITLITY CLASSES */
+.mb-large {
+  margin-bottom: 3rem;
+}
+.mt-large {
+  margin-top: 2.5rem;
+}
+.mb-medium {
+  margin-bottom: 1rem;
+}
+//hiding class
+.hide {
+  display: none;
+}
+
+/* GLOBAL SETTINGS */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 43.75%;
+  }
+  @media only screen and (max-width: $bp-mediumSmall) {
+    font-size: 37.5%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 31.25%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  line-height: 1.6;
+  background-color: var(--body-bg);
+  // CENTER CONTENT
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+/* footer styling */
+
+.attribution {
+  color: var(--color-heading);
+
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--primary-color);
+}
