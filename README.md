@@ -28,7 +28,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [Interactive-rating-component-challenge-solution| Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-faq-component-and-also-with-keyboard-navigation--IrT2vImi3)
+- Solution URL: [Interactive-rating-component-challenge-solution| Frontend Mentor](https://www.frontendmentor.io/solutions/cute-rating-card-with-nice-functionality-using-html5-css3-js-JEd4L75k8s)
 - Live Site URL: [https://skaliya.github.io/11-Interactive-rating-component/](https://skaliya.github.io/11-Interactive-rating-component/)
 
 <br>
